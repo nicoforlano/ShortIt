@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ShortIt - Account Confirmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body{
+            font-family: 'Noto+Sans',sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-container{
+            width: 600px;
+            border-collapse: collapse;
+            border: 1px solid #f2f0ee;
+            margin-left:auto;
+            margin-right:auto
+        }
+
+        .header{
+            border-bottom: 2px solid #000000cf;
+            background-color: #f8f8f8;
+            padding: 20px 25px;
+        }
+
+        .main{
+            padding: 5px 25px 30px 25px;
+            font-size: 14px;
+            background-color: #ffffff;
+            line-height: 25px;
+        }
+
+        .token {
+            font-weight: bold;
+        }
+
+        .footer{
+            border-top: 2px solid #000000cf;
+            font-size: 11px;
+            background-color: #5f5e60;
+            line-height: 20px;
+            padding: 30px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<table class="content-container">
+    <tr>
+        <td class="header">
+            SHORTIT
+        </td>
+    </tr>
+    <tr>
+        <td class="main">
+            <br/>
+            <b>Hi ,</b>
+            <p>Please confirm your account by clicking the link below:</p>
+            <p class="token" th:text="${token}">
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="footer">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
